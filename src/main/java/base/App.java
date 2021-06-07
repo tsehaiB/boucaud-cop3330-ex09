@@ -1,24 +1,14 @@
-package base;
 /*
-Calculate gallons of paint needed to paint the ceiling of a room.
-Prompt for the length and width, and assume one gallon covers 350 square feet.
-Display the number of gallons needed to paint the ceiling as a whole number.
-
-Example Output:
-You will need to purchase 2 gallons of paint to cover 360 square feet.
-Remember, you can’t buy a partial gallon of paint. You must
-round up to the next whole gallon.
-
-Constraints:
-Use a constant to hold the conversion rate.
-Ensure that you round up to the next whole number.
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Tsehai Boucaud
  */
+package base;
 import java.util.Scanner;
 import java.lang.Math;
 public class App {
     Scanner inp = new Scanner(System.in);
     final static double gallon = 350.0;
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         App myApp = new App();
         int len = myApp.readIn("length");
